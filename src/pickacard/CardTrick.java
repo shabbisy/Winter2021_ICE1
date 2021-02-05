@@ -9,6 +9,8 @@ import java.util.ArrayList;
  * @author janeya - 991461495
  * @author srinivsi
  */
+
+// Aiden Janey  991461495
 public class CardTrick 
 {
     public static void main(String[] args) 

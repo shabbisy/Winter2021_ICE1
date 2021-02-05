@@ -10,6 +10,8 @@ package pickacard;
  * @author janeya - 991461495
  * @author srinivsi 
  */
+
+// Aiden Janey  991461495
 public class Card 
 {
    private String suit; //clubs, spades, diamonds, hearts
