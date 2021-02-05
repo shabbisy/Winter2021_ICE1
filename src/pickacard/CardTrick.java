@@ -16,7 +16,11 @@ public class CardTrick
         Scanner input = new Scanner(System.in);
         
         ArrayList<Card> magicHand = new ArrayList<>();
-
+        
+        Card luckyCard = new Card();
+        luckyCard.setValue(7);
+        luckyCard.setSuit("Diamonds");
+        
         for(int i = 0; i < 7; i++) //generates 7 random cards
         {
             Card c = new Card();
