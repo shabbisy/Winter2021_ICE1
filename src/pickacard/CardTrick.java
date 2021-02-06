@@ -26,6 +26,7 @@ public class CardTrick {
             
             Card userCard = new Card();                         // make default usercard
             boolean find  = false; 
+	    
             Scanner input = new Scanner(System.in);
             
             System.out.println("Enter the value of card(1-13:)");
@@ -50,6 +51,24 @@ public class CardTrick {
                 System.out.println("Congrats! Your card matched");
             else
            System.out.println("oops! card not matched");
-
-    }
+	    
+	    Card luckyCard = new Card();
+	    luckyCard.setValue(6);
+            luckyCard.setSuit(Card.SUITS[3]);
+	    
+	    for(int i=0;i<magicHand.length;i++)
+           {
+                 if(magicHand[i].getValue() == luckyCard.getValue() && magicHand[i].getSuit().equalsIgnoreCase(luckyCard.getSuit()))
+           {
+                 find = true;
+                 break;
+           }
+       }
+     
+       // display the result 
+       if(find)
+           System.out.println("Lucky card is found in magicHand");
+       else
+           System.out.println("Lucky card is not found in magicHand");
+      }
 }
