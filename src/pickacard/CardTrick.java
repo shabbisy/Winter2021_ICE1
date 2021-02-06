@@ -84,6 +84,42 @@ public class CardTrick
 		{
 			System.out.println("Sorry your card doesn't matched");
 		}
+	    
+	    Card luckyCard = new Card("Diamonds" , 1);
+		
+		if(magicHand[0].equals( luckyCard))
+		{
+			System.out.println("Congrats your luckycard matched");
+		}
+		else if(magicHand[1].equals( luckyCard))
+		{
+			System.out.println("Congrats your luckycard matched");
+		}
+		else if(magicHand[2].equals( luckyCard))
+		{
+			System.out.println("Congrats your luckycard matched");
+		}
+		else if(magicHand[3].equals( luckyCard))
+		{
+			System.out.println("Congrats your luckycard matched");
+		}
+		else if(magicHand[4].equals( luckyCard))
+		{
+			System.out.println("Congrats your luckycard matched");
+		}
+		else if(magicHand[5].equlas( luckyCard))
+		{
+			System.out.println("Congrats your luckycard matched");
+		}
+		else if(magicHand[6].equlas( luckyCard))
+		{
+			System.out.println("Congrats your luckycard matched");
+		}
+		else
+		{
+			System.out.println("Sorry your luckycard doesn't matched");
+		}
+		
 		
 		
 		
