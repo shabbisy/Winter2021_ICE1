@@ -71,6 +71,12 @@ public class Card
     {
 	return(suit + " " + value);
     }
+	
+    public boolean equals (Object obj)
+    {
+	Card c  = (Card) obj;
+	return (this.getSuit() == c.getSuit() && this.getValue() == c.getValue()  );
+    }
    
    
    
