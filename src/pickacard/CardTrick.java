@@ -107,11 +107,11 @@ public class CardTrick
 		{
 			System.out.println("Congrats your luckycard matched");
 		}
-		else if(magicHand[5].equlas( luckyCard))
+		else if(magicHand[5].equals( luckyCard))
 		{
 			System.out.println("Congrats your luckycard matched");
 		}
-		else if(magicHand[6].equlas( luckyCard))
+		else if(magicHand[6].equals( luckyCard))
 		{
 			System.out.println("Congrats your luckycard matched");
 		}
