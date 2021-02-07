@@ -22,7 +22,6 @@ public class Card {
     public String getSuit() {
         return suit;
     }
-
     /**
      * @param suit the suit to set
      */
@@ -43,7 +42,9 @@ public class Card {
     public void setValue(int value) {
         this.value = value;
     }
-   
-   
+    
+    public String toString(){
+    return this.suit+","+this.value;
+    }
     
 }
