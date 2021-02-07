@@ -15,6 +15,9 @@ public class CardTrick {
         int inputSuit, inputValue;
         boolean handHasCard = false;
         Card[] magicHand = new Card[7];
+        Card luckyCard = new Card();
+        luckyCard.setValue(6);
+        luckyCard.setSuit("Diamonds");
 
         for (int i = 0; i < magicHand.length; i++) 
         {
