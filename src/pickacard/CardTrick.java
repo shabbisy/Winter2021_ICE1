@@ -23,26 +23,26 @@ public class CardTrick
         Card userIput = new Card();
         
         Scanner scan = new Scanner(System.in);
-        System.out.print("Enter the value of the card(1-13): ");
+        System.out.print("Please enter the value of the card (1 to 13): ");
         
         int value = scan.nextInt();
-        System.out.print("Enter the suit of the card" + Arrays.toString(Card.SUITS)+": ");
+        System.out.print("Please enter the suit of the card " + Arrays.toString(Card.SUITS)+": ");
         
         String suit = scan.next();
         userIput.setValue(value);
         userIput.setSuit(suit);
         
-        for(int i=0; i < magicHand.length; i++)
+        for(int i = 0; i < magicHand.length; i++)
         {
             if(userIput.getValue() == magicHand[i].getValue() 
                 && magicHand[i].getSuit().equals(userIput.getSuit()))
             {
-                System.out.println("User card found in magicHand ");
+                System.out.println("User's card is in the Magic Hand ");
                 break;
             }
             else
             {
-                System.out.println("User card not found in magicHand ");
+                System.out.println("User's card is not in the Magic Hand ");
                 break;
             }
         }
