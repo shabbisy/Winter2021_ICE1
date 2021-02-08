@@ -21,7 +21,13 @@ import java.util.*;
 public class CardTrick {
 
     public static void main(String[] args) {
-
+        
+        //Step 6: adding a card object called luckyCard
+        Card luckyCard = new Card();
+        luckyCard.setValue(7);
+        luckyCard.setSuit("Diamonds");
+        
+        
         Card[] magicHand = new Card[7];
 
         for (int i = 0; i < magicHand.length; i++) {
