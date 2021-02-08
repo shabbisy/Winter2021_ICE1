@@ -8,7 +8,11 @@ package pickacard;
  * This code is to be used in ICE1. When you create your own branch,
  * add your name as a modifier.
  * @author dancye
- * @author srinivsi 
+ * @author srinivsi
+ * 
+ * 
+ * Modifier:       Neil-Bryan Caoile
+ * Student-Number: 991590424
  */
 public class Card {
 
