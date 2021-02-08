@@ -38,12 +38,8 @@ public class CardTrick
             if(userIput.getValue() == magicHand[i].getValue() 
                 && magicHand[i].getSuit().equals(userIput.getSuit()))
             {
-                found = true;
+                System.out.println("User card found in magicHand ");
                 break;
-            }
-            else if(found)
-            {
-            System.out.println("User card found in magicHand ");
             }
             else
             {
