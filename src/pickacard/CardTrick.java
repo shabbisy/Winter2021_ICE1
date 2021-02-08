@@ -18,9 +18,9 @@ public class CardTrick
             Card c = new Card();
             c.setValue(num.nextInt(13)+1); 
             c.setSuit(Card.SUITS[num.nextInt(4)]); 
-            magicHand[i] = c; 
+            magicHand[i] = c;
         }
-        Card userCard = new Card();
+        Card userIput = new Card();
         boolean found = false;
         
         Scanner scan = new Scanner(System.in);
@@ -30,13 +30,13 @@ public class CardTrick
         System.out.print("Enter the suit of the card" + Arrays.toString(Card.SUITS)+": ");
         
         String suit = scan.next();
-        userCard.setValue(value);
-        userCard.setSuit(suit);
+        userIput.setValue(value);
+        userIput.setSuit(suit);
         
         for(int i=0; i < magicHand.length; i++)
         {
-           if(magicHand[i].getValue() == userCard.getValue() 
-                   && magicHand[i].getSuit().equalsIgnoreCase(userCard.getSuit()))
+           if(magicHand[i].getValue() == userIput.getValue() 
+                   && magicHand[i].getSuit().equalsIgnoreCase(userIput.getSuit()))
            {
                found = true;
                break;
