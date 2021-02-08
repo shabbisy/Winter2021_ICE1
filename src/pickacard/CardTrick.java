@@ -49,7 +49,7 @@ public class CardTrick {
         luckyCard.setSuit("Diamonds");
              //Name: Neil-Bryan Caoile
              //Student Id: 991590424
-//             I finished pulling and merging, now im gnna commit and push to my final branch
+//             I finished pulling and merging, now im gnna commit and push to my final branch.
         }
     }
 }
