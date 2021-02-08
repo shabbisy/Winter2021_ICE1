@@ -13,7 +13,7 @@ import java.util.Scanner;
 public class CardTrick {
 
     public static void main(String[] args) {
-        Card luckyCard = new Card;
+        Card luckyCard = new Card();
         luckyCard.setValue(6);
         luckyCard.setSuit("Clubs");
         System.out.println("Lucky card: " + luckyCard.getValue() + " of " + luckyCard.getSuit());
