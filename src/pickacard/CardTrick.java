@@ -47,7 +47,8 @@ public class CardTrick {
         Card luckyCard = new Card();
         luckyCard.setValue(1);
         luckyCard.setSuit("Diamonds");
-
+             //Name: Neil-Bryan Caoile
+             //Student Id: 991590424
         }
     }
 }
