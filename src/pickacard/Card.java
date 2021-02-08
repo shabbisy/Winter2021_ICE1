@@ -8,13 +8,14 @@ package pickacard;
  * This code is to be used in ICE1. When you create your own branch,
  * add your name as a modifier.
  * @author dancye
- * @author srinivsi 
+ * @author Shankar Ganesh 
+ * Student ID: 991473537
  */
 public class Card {
 
    private String suit; //clubs, spades, diamonds, hearts
    private int value;//1-13
-
+   
    public static final String [] SUITS = {"Hearts", "Diamonds", "Spades", "Clubs"};
     /**
      * @return the suit
@@ -22,14 +23,14 @@ public class Card {
     public String getSuit() {
         return suit;
     }
-
+    
     /**
      * @param suit the suit to set
      */
     public void setSuit(String suit) {
         this.suit = suit;
     }
-
+   
     /**
      * @return the value
      */
