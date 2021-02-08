@@ -8,13 +8,17 @@ import java.util.*;
  * @author dancye
  * @author srinivsi
  * Name : Mandeep Singh (ManiUbhi Github UserName)
- * Student Id : 991
+ * Student Id : 991630288
  * 
  */
 public class CardTrick {
 
     public static void main(String[] args) {
         Card[] magicHand = new Card[7];
+        // Setting out the lucky card
+        Card luckyCard = new Card();
+        luckyCard.setSuit("Spades");
+        luckyCard.setValue(5);
         // Filling out random suits and vals in magic hand
         for (int i = 0; i < magicHand.length; i++) {
             Card c      = new Card();
@@ -29,7 +33,7 @@ public class CardTrick {
         String inpSuit = userInput.next();
         System.out.println("Cool!, now select the number between 1 to 13");
         int inpNum= userInput.nextInt();
-        boolean answer = findCard(inpSuit,inpNum, magicHand);
+        boolean answer = findCard(inpSuit,inpNum, magicHand, luckyCard);
         System.out.println ((answer) ? "BullsEye!, You got it" : "Bad luck,Never Mind");
         //insert code to ask the user for Card value and suit, create their card
         // and search magicHand here
@@ -49,9 +53,11 @@ public class CardTrick {
     // Utility function to finding out the cards in a magichard
     // Time Complexity O(n)
     // Space Complexity O(1)
-    public static boolean findCard(String suit,int num, Card[] cards){
+    public static boolean findCard(String suit,int num, Card[] cards, Card luckyCard){
         for (Card c : cards){
             if ((c.getValue()   == num) && (c.getSuit().equals(suit))){
+                if ((c.getValue()   == luckyCard.getValue()) && (c.getSuit().equals(luckyCard.getSuit())))
+                {System.out.println("Lucky Card <- ->");}
                 return true;
             }
         }
