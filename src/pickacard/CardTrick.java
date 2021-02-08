@@ -8,11 +8,14 @@ import java.util.Scanner;
  * @author dancye
  * @author srinivsi
  * @author Adrian Davies 991524635
- * Date modified: 02/28/2021
+ * Date modified: 02/08/2021
  */
 public class CardTrick {
 
     public static void main(String[] args) {
+        Card luckyCard = new Card;
+        luckyCard.setValue(6);
+        luckyCard.setSuit("Clubs");
         
         Card[] magicHand = new Card[7];
 
