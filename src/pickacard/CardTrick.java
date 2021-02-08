@@ -23,10 +23,9 @@ public class CardTrick {
         {
             Card c = new Card();  
             magicHand[i] = c;
-            c.setSuit(Card.SUITS[(int) (Math.random() * 4)]);                                        //c.setSuit(Card.SUITS[insert call to random number between 0-3 here])
-            c.setValue((int) (Math.random() * 13 + 1));                                              //c.setValue(insert call to random number generator here)
-            System.out.print(c.getSuit());
-            System.out.println(", " + c.getValue());  
+            c.setSuit(Card.SUITS[(int) (Math.random() * 4)]);                                         //c.setSuit(Card.SUITS[insert call to random number between 0-3 here])
+            c.setValue((int) (Math.random() * 13 + 1));                                               //c.setValue(insert call to random number generator here)
+            System.out.print(c.getSuit() + ", " + c.getValue());  
 
         }
         
@@ -36,7 +35,7 @@ public class CardTrick {
             System.out.println("Enter a number to go with your suit from (1-13): ");
             int userValue = input.nextInt();
       
-            for(Card c: magicHand)                                                                         //and search magicHand here                          
+        for(Card c: magicHand)                                                                        //and search magicHand here                          
         {   
             if (c.getSuit().equals(userSuit) && c.getValue() == userValue)                            //Then report the result here
             {
@@ -55,7 +54,8 @@ public class CardTrick {
       Card luckyCard = new Card();
         luckyCard.setSuit(Card.SUITS[2]);
         luckyCard.setValue(1);
-        for(Card c:magicHand)                                                                          //and search magicHand here                          
+        
+        for(Card c:magicHand)                                                                          //and search magicHand for lucky card                          
         {
             if (c.getSuit().equals(luckyCard.getSuit()) && c.getValue() == luckyCard.getValue())
             {
