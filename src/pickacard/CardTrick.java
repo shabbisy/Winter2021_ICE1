@@ -43,14 +43,8 @@ public class CardTrick {
                 System.out.println("Card Matched!!!");
             }
              
-             //        Hard Code Lucky Card
+      
 
-        Card luckyCard = new Card();
-        luckyCard.setValue(1);
-        luckyCard.setSuit("Diamonds");
-        
-//        Name: Neil-Bryan Caoile
-//        Student Id: 991590424
         }
     }
 }
