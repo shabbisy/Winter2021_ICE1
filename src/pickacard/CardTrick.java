@@ -21,7 +21,6 @@ public class CardTrick
             magicHand[i] = c;
         }
         Card userIput = new Card();
-        boolean found = false;
         
         Scanner scan = new Scanner(System.in);
         System.out.print("Enter the value of the card(1-13): ");
@@ -39,10 +38,12 @@ public class CardTrick
                 && magicHand[i].getSuit().equals(userIput.getSuit()))
             {
                 System.out.println("User card found in magicHand ");
+                break;
             }
             else
             {
-            System.out.println("User card not found in magicHand ");
+                System.out.println("User card not found in magicHand ");
+                break;
             }
         }
     }
