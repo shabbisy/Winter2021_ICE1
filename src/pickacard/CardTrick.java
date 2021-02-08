@@ -25,12 +25,12 @@ public class CardTrick
         Scanner scan = new Scanner(System.in);
         System.out.print("Please enter the value of the card (1 to 13): ");
         
-        int value = scan.nextInt();
+        int val = scan.nextInt();
         System.out.print("Please enter the suit of the card " + Arrays.toString(Card.SUITS)+": ");
         
         String suit = scan.next();
-        userIput.setValue(value);
         userIput.setSuit(suit);
+        userIput.setValue(val);
         
         for(int i = 0; i < magicHand.length; i++)
         {
