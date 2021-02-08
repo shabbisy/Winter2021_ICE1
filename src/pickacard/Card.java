@@ -9,6 +9,7 @@ package pickacard;
  * add your name as a modifier.
  * @author dancye
  * @author srinivsi 
+ * @author Bezawit Abebe 991585378
  */
 public class Card {
 
@@ -44,6 +45,12 @@ public class Card {
         this.value = value;
     }
    
+   @Override
    
+   // Checking to see the values of the Hand 
+   
+   public String toString(){
+       return "value: " + value + ", suit: " + suit;
+   }
     
 }
