@@ -35,9 +35,8 @@ public class CardTrick {
             String userSuit = input.next();
             System.out.println("Enter a number to go with your suit from (1-13): ");
             int userValue = input.nextInt();
-       
-            
-       for(Card c: magicHand)                                                                         //and search magicHand here                          
+      
+            for(Card c: magicHand)                                                                         //and search magicHand here                          
         {   
             if (c.getSuit().equals(userSuit) && c.getValue() == userValue)                            //Then report the result here
             {
@@ -64,6 +63,7 @@ public class CardTrick {
                   break;
             }                                                                                          //Then report the result here
         }
-    }
+        }
+
 }
 
