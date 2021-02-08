@@ -33,7 +33,7 @@ public class CardTrick
         userCard.setValue(value);
         userCard.setSuit(suit);
         
-        for(int i=0;i<magicHand.length;i++)
+        for(int i=0; i < magicHand.length; i++)
         {
            if(magicHand[i].getValue() == userCard.getValue() 
                    && magicHand[i].getSuit().equalsIgnoreCase(userCard.getSuit()))
@@ -45,11 +45,11 @@ public class CardTrick
         
         if(found)
         {
-           System.out.println("User card found in magicHand");
+           System.out.println("User card found in magicHand ");
         }
         else
         {
-           System.out.println("User card not found in magicHand");
+           System.out.println("User card not found in magicHand ");
         }
         
     }
