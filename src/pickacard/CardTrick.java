@@ -21,17 +21,15 @@ public class CardTrick
             magicHand[i] = c; 
         }
         Card userCard = new Card();
-        int value;
-        String suit;
         boolean found = false;
         
         Scanner scan = new Scanner(System.in);
         System.out.print("Enter the value of the card(1-13): ");
         
-        value = scan.nextInt();
+        int value = scan.nextInt();
         System.out.print("Enter the suit of the card" + Arrays.toString(Card.SUITS)+": ");
         
-        suit = scan.next();
+        String suit = scan.next();
         userCard.setValue(value);
         userCard.setSuit(suit);
         
