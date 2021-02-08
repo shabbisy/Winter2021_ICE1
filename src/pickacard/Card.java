@@ -48,6 +48,7 @@ public class Card {
         this.value = value;
     }
    
-   
+//     Modifier:       Neil-Bryan Caoile
+//   Student-Number: 991590424
     
 }
