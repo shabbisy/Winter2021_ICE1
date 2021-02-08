@@ -23,6 +23,7 @@ public class CardTrick
     public static void main(String[] args)
     {
         //----------- Making lucky card for Task 6 -----------
+
         Card luckyCard = new Card();
         luckyCard.setValue(5);
         luckyCard.setSuit(Card.SUITS[2]);
