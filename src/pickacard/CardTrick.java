@@ -16,8 +16,10 @@ public class CardTrick {
         Card luckyCard = new Card;
         luckyCard.setValue(6);
         luckyCard.setSuit("Clubs");
+        System.out.println("Lucky card: " + luckyCard.getValue() + " of " + luckyCard.getSuit());
         
         Card[] magicHand = new Card[7];
+        System.out.println("Magic hand: ");
 
         for (int i = 0; i < magicHand.length; i++) {
             Card c = new Card();
@@ -26,25 +28,14 @@ public class CardTrick {
             //c.setSuit(Card.SUITS[insert call to random number between 0-3 here])
             c.setSuit(Card.SUITS[(int)(Math.random() * 3)]);
             magicHand[i] = c;
+            System.out.println(magicHand[i].getValue() + " of" + magicHand[i].getSuit());
         }
-        
-        //insert code to ask the user for Card value and suit, create their card
-        // and search magicHand here
-        Scanner userInput = new Scanner(System.in);
-        System.out.print("Pick a Card value: ");
-        int userValue = userInput.nextInt();
-        System.out.print("Pick a Card suit: ");
-        String userSuit = userInput.next();
-        
-        Card myCard = new Card();
-        myCard.setValue(userValue);
-        myCard.setSuit(userSuit);
         
         boolean isInMagicHand = false;
         
         for(int i = 0; i < magicHand.length; i++) {            
-            if(myCard.getValue() == magicHand[i].getValue() 
-                    && myCard.getSuit().equals(magicHand[i].getSuit())) {
+            if(luckyCard.getValue() == magicHand[i].getValue() 
+                    && luckyCard.getSuit().equals(magicHand[i].getSuit())) {
                 isInMagicHand = true;
                 break;
             }
