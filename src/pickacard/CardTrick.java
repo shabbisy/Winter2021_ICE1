@@ -22,7 +22,12 @@ public class CardTrick
 
     public static void main(String[] args)
     {
-        
+        //----------- Making lucky card for Task 6 -----------
+        Card luckyCard = new Card();
+        luckyCard.setValue(5);
+        luckyCard.setSuit(Card.SUITS[2]);
+        System.out.println("Lucky card(Task 6): " + luckyCard.getValue() + " of " + luckyCard.getSuit() + "\n"); //5 of spades
+      
         Card[] magicHand = new Card[7];
 
         for (int i = 0; i < magicHand.length; i++) {
@@ -73,5 +78,6 @@ public class CardTrick
             }
         }
         System.out.println("Sorry, you picked the wrong card!");   // This code only runs if the user does not guess the right card
+
     }
 }
