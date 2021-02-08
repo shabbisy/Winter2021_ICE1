@@ -35,23 +35,21 @@ public class CardTrick
         
         for(int i=0; i < magicHand.length; i++)
         {
-           if(magicHand[i].getValue() == userIput.getValue() 
-                   && magicHand[i].getSuit().equalsIgnoreCase(userIput.getSuit()))
-           {
-               found = true;
-               break;
-           }
+            if(magicHand[i].getValue() == userIput.getValue() 
+                && magicHand[i].getSuit().equalsIgnoreCase(userIput.getSuit()))
+            {
+                found = true;
+                break;
+            }
+            else if(found)
+            {
+            System.out.println("User card found in magicHand ");
+            }
+            else
+            {
+            System.out.println("User card not found in magicHand ");
+            }
         }
-        
-        if(found)
-        {
-           System.out.println("User card found in magicHand ");
-        }
-        else
-        {
-           System.out.println("User card not found in magicHand ");
-        }
-        
     }
 
 }
