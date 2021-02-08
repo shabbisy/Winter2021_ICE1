@@ -10,6 +10,7 @@ import java.util.Scanner;
  * Student # 991 628 529
  * Class: SYST 17796
  * Instructor: Sivagama Srinivasan
+ * assignment ICE_1
  */
 
 public class CardTrick 
