@@ -8,7 +8,7 @@ import java.util.Scanner;
  *
  * @author dancye
  * @author srinivsi
- * @author Bezawit Abebe
+ * @author Bezawit Abebe 991585378
  */
 public class CardTrick {
 
@@ -26,13 +26,47 @@ public class CardTrick {
              //c.setSuit(Card.SUITS[insert call to random number between 0-3 here])
             c.setSuit(Card.SUITS[(int)(Math.random()*3)]);
             
-            
+            magicHand[i]=c;
            
         }
 
         //insert code to ask the user for Card value and suit, create their card
-        // and search magicHand here
+        System.out.println("Please Enter the Card Value(choose a number between 1-13): ");
+        int value = input.nextInt();
+        Card user = new Card ();
+        user.setValue(value);
+        input.nextLine();
+        
+        System.out.println("Enter the Suit (0-Hearts, 1-Diamonds, 2- Spades, 3- Clubs): ");
+        int suitval = input.nextInt();
+        user.setSuit(Card.SUITS[suitval]);
+        
+        Card luckycard = new Card();
+        luckycard.setValue(3);
+        luckycard.setSuit(Card.SUITS[3]);
+        
+        // searhing the Magic Hand to see if the LuckyCard is in it
+        
+        int luck = 0;
+        for (Card magicCard: magicHand){
+            if(magicCard.getValue() == luckycard.getValue() && magicCard.getSuit() == luckycard.getSuit()){
+                luck=1;
+            } else {
+                luck=0;
+            }
+        }
+        
         //Then report the result here
+        
+        if (luck ==0){
+            System.out.println("Sorry! This card is not in the Magic Hand.");
+        } else {
+            System.out.println("Congrats! This card is in the Magic Hand!");
+        }
+        
+        // Print Out Magic Hand to confirm Lucky Card is/ isn't in the there
+        
+          System.out.println(Arrays.deepToString(magicHand));
     }
 
 }
