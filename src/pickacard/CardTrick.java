@@ -63,7 +63,7 @@ public class CardTrick {
                   break;
             }                                                                                          //Then report the result here
         }
-        }
+    }
 
 }
 
