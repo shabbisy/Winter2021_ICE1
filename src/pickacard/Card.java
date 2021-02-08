@@ -3,7 +3,7 @@
     Student Number: 991627630
     Course: SYST 17796
     Professor: Sivagama Srinivasan
-    Assignment ICE1
+    Assignment ICE_1
     Date: February 8, 2021
  */
 
