@@ -39,7 +39,6 @@ public class CardTrick
                 && magicHand[i].getSuit().equals(userIput.getSuit()))
             {
                 System.out.println("User card found in magicHand ");
-                break;
             }
             else
             {
