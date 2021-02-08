@@ -35,8 +35,8 @@ public class CardTrick
         
         for(int i=0; i < magicHand.length; i++)
         {
-            if(magicHand[i].getValue() == userIput.getValue() 
-                && magicHand[i].getSuit().equalsIgnoreCase(userIput.getSuit()))
+            if(userIput.getValue() == magicHand[i].getValue() 
+                && magicHand[i].getSuit().equals(userIput.getSuit()))
             {
                 found = true;
                 break;
