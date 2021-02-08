@@ -39,6 +39,12 @@ public class CardTrick {
             if ((magicHand[i].getValue() == valueUserInput) && (magicHand[i].getSuit().equals(suitUserInputString))) {
                 System.out.println("Card Matched!!!");
             }
+             
+             //        Hard Code Lucky Card
+
+        Card luckyCard = new Card();
+        luckyCard.setValue(1);
+        luckyCard.setSuit("Diamonds");
 
         }
     }
