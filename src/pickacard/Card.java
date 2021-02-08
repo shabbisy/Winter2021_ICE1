@@ -1,3 +1,11 @@
+/*
+  Name: Ken Florencio
+  Student Number: 991547422
+  Course: SYST17796, class 1211_34537
+  Professor: Sivagama Srinivasan
+  Assignment: ICE1,
+  Due Date: Feb 8, 2021 1:00 P.M. EST
+ */
 package pickacard;
 
 /**
@@ -7,8 +15,8 @@ package pickacard;
  * There are 52 cards in a deck, no jokers.
  * This code is to be used in ICE1. When you create your own branch,
  * add your name as a modifier.
- * @author dancye
- * @author srinivsi 
+ * @author Ken Florencio
+ * @author 991547422
  */
 public class Card {
 
@@ -43,7 +51,4 @@ public class Card {
     public void setValue(int value) {
         this.value = value;
     }
-   
-   
-    
 }
