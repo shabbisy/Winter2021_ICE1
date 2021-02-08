@@ -1,4 +1,13 @@
+/*
+    Name: Ismael Marquez Jimenez
+    Student Number: 991627630
+    Course: SYST 17796
+    Professor: Sivagama Srinivasan
+    Assignment ICE1
+    Date: February 8, 2021
+ */
 
+package pickacard;
 import java.sql.SQLOutput;
 import java.util.*;
 
