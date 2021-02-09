@@ -10,7 +10,9 @@ import java.lang.Math;
  * This code is to be used in ICE1. When you create your own branch,
  * add your name as a modifier.
  * @author dancye
- * @author srinivsi 
+ * @author srinivsi
+ * Programmed by: Tommy Chiu
+ * Student ID: 991535148
  */
 public class Card {
 
