@@ -23,7 +23,7 @@ public class CardTrick
             c.setValue(c.randomValue());
             magicHand[i] = c;
         }
-        for(int i=0; i < magicHand.length; i++)
+        for(int i = 0; i < magicHand.length; i++)
         {
             System.out.println(magicHand[i].getSuit() + " " + magicHand[i].getValue());
         }
@@ -41,8 +41,29 @@ public class CardTrick
         
         boolean found = false;
         
+        Card luckyCard = new Card();
+    
+        luckyCard.setSuit("Spades");
+        luckyCard.setValue(7);
+    
+        for(int i = 0; i < magicHand.length; i++)
+        {
+            if(player.getSuit().equals(luckyCard.getSuit()) && player.getValue() == luckyCard.getValue())
+            {
+                found = true;
+            }
+        }
+            if(found)
+            {
+                System.out.println("The lucky card is " + luckyCard.getValue() + " of " + luckyCard.getSuit() + ". Congrats!");
+            }
+            else
+            {
+                System.out.println("The lucky card was " + luckyCard.getValue() + " of " + luckyCard.getSuit() + ". You did not find the lucky card!");
+            }
+        
 
-       for(int i=0; i < magicHand.length; i++)
+       for(int i = 0; i < magicHand.length; i++)
         {
            if(magicHand[i].getSuit().equals(player.getSuit()) && magicHand[i].getValue() == player.getValue())
             {
