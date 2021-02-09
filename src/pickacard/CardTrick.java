@@ -9,19 +9,22 @@ import java.util.Scanner;
  * @author dancye
  * @author srinivsi
  */
-public class CardTrick {
-
-    public static void main(String[] args) {
+public class CardTrick 
+{
+    public static void main(String[] args) 
+    {
         
         Card[] magicHand = new Card[7];
 
-        for (int i = 0; i < magicHand.length; i++) {
+        for (int i = 0; i < magicHand.length; i++) 
+        {
             Card c = new Card();
             c.setSuit(Card.SUITS[c.randomSuit()]);
             c.setValue(c.randomValue());
             magicHand[i] = c;
         }
-        for(int i=0; i < magicHand.length; i++){
+        for(int i=0; i < magicHand.length; i++)
+        {
             System.out.println(magicHand[i].getSuit() + " " + magicHand[i].getValue());
         }
         
@@ -40,18 +43,20 @@ public class CardTrick {
         
 
        for(int i=0; i < magicHand.length; i++)
-       {
+        {
            if(magicHand[i].getSuit().equals(player.getSuit()) && magicHand[i].getValue() == player.getValue())
-           {
+            {
                found = true;
             }
-       }
-           if(found)
-        {
-                    System.out.println("Your card " + player.getValue() + " of " + player.getSuit() + " was found within the magic hand!");
-                } else {
-                    System.out.println("Your card was not found");
-                }
+        }
+            if(found)
+            {
+                System.out.println("Your card " + player.getValue() + " of " + player.getSuit() + " was found within the magic hand!");
+            } 
+            else 
+            {
+                System.out.println("Your card was not found");
+            }
         
     }
 }
