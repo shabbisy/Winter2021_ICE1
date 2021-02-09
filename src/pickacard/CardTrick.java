@@ -8,6 +8,8 @@ import java.util.Scanner;
  *
  * @author dancye
  * @author srinivsi
+ * Programmed by: Tommy Chiu
+ * Student ID: 991535148
  */
 public class CardTrick 
 {
