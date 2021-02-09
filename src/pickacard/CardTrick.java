@@ -10,6 +10,7 @@ import java.util.Scanner;
  * @author srinivsi
  * Programmed by: Tommy Chiu
  * Student ID: 991535148
+ * Date Modified: February 9th, 2021
  */
 public class CardTrick 
 {
