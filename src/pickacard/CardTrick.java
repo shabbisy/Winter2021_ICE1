@@ -19,6 +19,7 @@ public class CardTrick {
             //c.setSuit(Card.SUITS[insert call to random number between 0-3 here])
         }
         // small change ($0.01)
+        // large change ($20)
         //insert code to ask the user for Card value and suit, create their card
         // and search magicHand here
         //Then report the result here
