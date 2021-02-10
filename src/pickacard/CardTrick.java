@@ -53,6 +53,5 @@ public class CardTrick {
             }
         }
         //Then report the result here
-
-
+        System.out.println(result);
 }
