@@ -10,6 +10,9 @@ package pickacard;
  * @author srinivsi
  * @author akshita
  */
+import java.util.Random;
+import java.util.Scanner;
+
 public class CardTrick {
 
     public static void main(String[] args) {
@@ -54,4 +57,5 @@ public class CardTrick {
         }
         //Then report the result here
         System.out.println(result);
+    }
 }
