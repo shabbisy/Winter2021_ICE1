@@ -39,6 +39,7 @@ public class CardTrick {
         System.out.println("Enter Card Option - Number: ");
         int num = in.nextInt();
         // and search magicHand here
+        CheckChoice(magicHand, suit, num);
         //Then report the result here
     }
 
