@@ -7,8 +7,8 @@ import java.util.*;
  *
  * @author dancye
  * @author srinivsi
- * @modifier Christina Kwamie
- * @studentid 991444121
+ * @modifier Christina Kwamie **
+ * @studentid 991444121 **
  */
 public class CardTrick {
 
