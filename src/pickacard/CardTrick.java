@@ -1,11 +1,14 @@
 package pickacard;
-
+// Name: Akshita Sreenivasulu
+// Date: February 10, 2020
+// Student ID Number: 991592661
 /**
  * A class that fills a magic hand of 7 cards with random Card Objects and then asks the user to pick a card and
  * searches the array of cards for the match to the user's card. To be used as starting code in ICE 1
  *
  * @author dancye
  * @author srinivsi
+ * @author akshita
  */
 public class CardTrick {
 
