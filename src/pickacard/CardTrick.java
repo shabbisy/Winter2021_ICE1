@@ -33,6 +33,11 @@ public class CardTrick {
 
         Scanner in = new Scanner(System.in);
         //insert code to ask the user for Card value and suit, create their card
+        System.out.println("Enter Card Option - Suit: ");
+        String suit = in.next();
+
+        System.out.println("Enter Card Option - Number: ");
+        int num = in.nextInt();
         // and search magicHand here
         //Then report the result here
     }
