@@ -23,6 +23,9 @@ public class CardTrick {
             Card c = new Card();
             Card luckyCard = new Card();
             
+            luckyCard.setSuit(Card.SUITS[12]);
+            luckyCard.setValue(2);
+            
             Random rn = new Random();
             int value1 = rn.nextInt(13-1+1)+1;
             int value2 = rn.nextInt(3+1);
